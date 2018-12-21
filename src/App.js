@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { HydraAdmin } from '@api-platform/admin';
+
+export default () => <HydraAdmin entrypoint="http://127.0.0.1:8000/api/" />;
+
 class App extends Component {
   render() {
     return (
@@ -25,4 +29,3 @@ class App extends Component {
   }
 }
 
-export default App;
